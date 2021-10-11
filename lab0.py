@@ -21,8 +21,8 @@ class MoveTurtle:
 		if self.is_next(msg):
 			return
 		msg_new.linear.x = self.speed_turtle(msg)
-        msg_new.angular.z = self.angle(msg)         
-		self.pub_leo.publish(msg_new)
+        msg_new.angular.z = self.angle(msg)
+        self.pub_leo.publish(msg_new)
         
 	def callback2(self, msg):
 		self.my_x = msg.x
